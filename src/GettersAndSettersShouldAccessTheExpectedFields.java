@@ -3,8 +3,16 @@ package javacodechecker;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.Externalizable;
 
-class GettersAndSettersShouldAccessTheExpectedFields {
+class GettersAndSettersShouldAccessTheExpectedFields  implements Externalizable{
+	
+	
+	public GettersAndSettersShouldAccessTheExpectedFields(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
 
 	private int x ,y ,z;
 	
@@ -15,6 +23,8 @@ class GettersAndSettersShouldAccessTheExpectedFields {
 		//this is for test
 		this.y = val;
 	}
+	
+	
 
 	// EMB-ISSUE: CodeIssueNames.GETTERS_AND_SETTERS_SHOULD_ACCESS_THE_EXPECTED_FIELDS 
 	public int getY() {
