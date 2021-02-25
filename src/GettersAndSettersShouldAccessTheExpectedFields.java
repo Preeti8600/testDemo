@@ -7,7 +7,7 @@ import java.io.Externalizable;
 
 class GettersAndSettersShouldAccessTheExpectedFields  implements Externalizable{
 	
-	public GettersAndSettersShouldAccessTheExpectedFields () {
+	public GettersAndSettersShouldAccessTheExpectedFields (int a , int b) {
 		
 	}
 
