@@ -8,9 +8,7 @@ import java.io.Externalizable;
 class GettersAndSettersShouldAccessTheExpectedFields  implements Externalizable{
 	
 	
-	public GettersAndSettersShouldAccessTheExpectedFields() {
-		
-	}
+	
 
 
 	private int x ,y ,z;
@@ -27,7 +25,7 @@ class GettersAndSettersShouldAccessTheExpectedFields  implements Externalizable{
 
 	// EMB-ISSUE: CodeIssueNames.GETTERS_AND_SETTERS_SHOULD_ACCESS_THE_EXPECTED_FIELDS 
 	public int getY() {
-		return this.x;
+		return this.y;
 	}
 
 	// EMB-ISSUE: CodeIssueNames.GETTERS_AND_SETTERS_SHOULD_ACCESS_THE_EXPECTED_FIELDS
