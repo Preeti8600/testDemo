@@ -12,6 +12,7 @@ public class ExternalizableMustHaveNoArgumentsConstructor implements Externaliza
 
 
 	public void newMethod() {
+		System.err.println("");
 
 	}
     public ExternalizableMustHaveNoArgumentsConstructor(String name, int age) {
