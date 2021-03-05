@@ -18,7 +18,7 @@ public class ResourceLeak {
         try {
             PrintWriter out = new PrintWriter("");
             out.println("the text");
-            out.close();
+        
             Cipher c1 = Cipher.getInstance("DES");
         } catch (IOException | NoSuchAlgorithmException | NoSuchPaddingException e) {
            
