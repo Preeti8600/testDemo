@@ -22,7 +22,7 @@ public class ResourceLeak {
             Cipher c1 = Cipher.getInstance("DES");
         } catch (IOException | NoSuchAlgorithmException | NoSuchPaddingException e) {
             System.err.println();
-
+	System.err.println();
        
 
         }
