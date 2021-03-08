@@ -23,7 +23,7 @@ public class ResourceLeak {
     public void process() {
         SecureRandom secureRandom = new SecureRandom();
 	     System.runFinalizersOnExit(true);
-        try {
+        try {    
             PrintWriter out = new PrintWriter("");
             out.println("the text");
 
