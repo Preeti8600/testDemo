@@ -44,6 +44,7 @@ class GettersAndSettersShouldAccessTheExpectedFields  implements Externalizable{
 		  // EMB-ISSUE: CodeIssueNames.GETTERS_AND_SETTERS_SHOULD_ACCESS_THE_EXPECTED_FIELDS/no-detect
 		  public int getName() {	
 			  System.out.println(" ");
+			  System.out.println(" ");
 			  return this.x;
 			}
 		  
