@@ -15,6 +15,8 @@ class GettersAndSettersShouldAccessTheExpectedFields  implements Externalizable{
 	private int x ,y ,z;
 	
 	private boolean active;
+	    Pattern patterns = java.util.regex.Pattern.compile("$[a-z]+^");
+        Matcher matchers = patterns.matcher("");
 	
 	// EMB-ISSUE: CodeIssueNames.GETTERS_AND_SETTERS_SHOULD_ACCESS_THE_EXPECTED_FIELDS 
 	public void setX(int val) {
