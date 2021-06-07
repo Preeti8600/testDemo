@@ -61,7 +61,12 @@ class GettersAndSettersShouldAccessTheExpectedFields  implements Externalizable{
 				this.z = val;
 			}
 	public void newIssues(){
-		try{}
+		try{
+		File tempDir;
+//EMB-ISSUE: CodeIssueNames.AVOID_FILE_CREATE_TEMP_FILE
+tempDir = File.createTempFile("", ".");
+tempDir.delete();
+tempDir.mkdir();  }
 		 catch(NullPointerException e){}
 	}
 	public void newIssues2(){
