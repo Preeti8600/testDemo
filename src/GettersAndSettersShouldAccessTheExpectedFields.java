@@ -64,6 +64,10 @@ class GettersAndSettersShouldAccessTheExpectedFields  implements Externalizable{
 		try{}
 		 catch(NullPointerException e){}
 	}
+	public void newIssues2(){
+		try{}
+		 catch(NullPointerException e){}
+	}
 			
 			
 }
